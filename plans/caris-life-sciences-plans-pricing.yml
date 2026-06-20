@@ -1,0 +1,78 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Caris Life Sciences
+providerId: caris-life-sciences
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Precision Oncology
+- Molecular Profiling
+- Genomics
+- Healthcare
+- EHR Integration
+- Real-World Data
+- Plans
+description: >-
+  Caris Life Sciences does not publish self-serve, usage-metered API pricing.
+  Its products are clinical and research services: molecular profiling tests
+  (billed to payers/patients through clinical-laboratory channels), the
+  Caris+Portal and EHR integrations (provisioned to ordering providers as part
+  of the testing relationship at no published per-call price), and the CODEai
+  clinico-genomic data platform (licensed to biopharma and academic researchers
+  under negotiated contract). No public plan or per-request rate card exists.
+notes: >-
+  All entries below are non-reconciled. Caris does not disclose API or platform
+  pricing publicly; engagement is via Caris sales, customer support, or a
+  Molecular Science Liaison. Verify any commercial terms directly with Caris.
+sources:
+- https://www.carislifesciences.com/order/
+- https://www.carislifesciences.com/partners/ehr-integrations/
+- https://www.carislifesciences.com/research/artificial-intelligence/caris-codeai/
+plans:
+- id: caris-clinical-ordering
+  name: Clinical Ordering and Integration
+  type: contract
+  description: >-
+    Caris+Portal access and EHR integration are provisioned to ordering
+    healthcare providers as part of the clinical testing relationship. There is
+    no published per-API or per-call price; molecular profiling tests are billed
+    through standard clinical-laboratory reimbursement channels.
+  entries:
+  - label: Clinician Portal and EHR Integration
+    name: clinical_ordering
+    type: contract
+    metric: contract
+    limit: -1
+    timeFrame: usage
+    geo: global
+    unit: 1
+    price: not publicly disclosed (provisioned with testing relationship)
+    userMultiplied: false
+  elements:
+  - name: Caris+Portal
+  - name: EHR Integration
+- id: caris-codeai-research
+  name: CODEai Research and Biopharma
+  type: enterprise
+  description: >-
+    Licensed access to the CODEai clinico-genomic real-world data platform for
+    biopharma and academic research under negotiated contract. Access is granted
+    via a Caris Molecular Science Liaison; pricing is not publicly disclosed.
+  entries:
+  - label: CODEai Data Platform License
+    name: codeai_license
+    type: enterprise
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: contact sales (negotiated)
+    userMultiplied: false
+  elements:
+  - name: Caris CODEai Real-World Data
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

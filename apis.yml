@@ -1,0 +1,96 @@
+aid: caris-life-sciences
+url: https://raw.githubusercontent.com/api-evangelist/caris-life-sciences/refs/heads/main/apis.yml
+name: Caris Life Sciences
+kind: company
+description: Caris Life Sciences is a molecular science and precision oncology company
+  that delivers comprehensive tumor profiling (Caris Molecular Intelligence / MI Profiling)
+  and a clinico-genomic real-world data platform (CODEai). Clinician access is through
+  the Caris+Portal and partner-provisioned EHR integrations (Epic Orders and Results
+  Anywhere, OncoEMR/Flatiron, iKnowMed, and other CMS-certified systems). Caris does
+  not publish a public, self-serve developer API; integration is partner- and
+  contract-based.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Precision Oncology
+- Molecular Profiling
+- Genomics
+- Healthcare
+- EHR Integration
+- Real-World Data
+created: '2026-06-20'
+modified: '2026-06-20'
+specificationVersion: '0.19'
+apis:
+- aid: caris-life-sciences:caris-portal
+  name: Caris+Portal
+  tags:
+  - Portal
+  - Ordering
+  - Results
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://portal.caris.ai/
+  baseURL: https://portal.caris.ai
+  properties:
+  - url: https://www.carislifesciences.com/order/
+    type: Documentation
+  - url: openapi/caris-life-sciences-openapi.yml
+    type: OpenAPI
+  description: Web-based clinician portal for electronically submitting test orders
+    (requisitions), tracking case progress, and viewing molecular profiling results.
+    Accessed through the browser at portal.caris.ai; no documented public HTTP API
+    is exposed to third-party developers.
+- aid: caris-life-sciences:ehr-integration
+  name: Caris EHR Integration
+  tags:
+  - EHR
+  - HL7
+  - Orders and Results
+  - Epic
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.carislifesciences.com/partners/ehr-integrations/
+  baseURL: https://www.carislifesciences.com/partners/ehr-integrations/
+  properties:
+  - url: https://www.carislifesciences.com/partners/ehr-integrations/
+    type: Documentation
+  - url: openapi/caris-life-sciences-openapi.yml
+    type: OpenAPI
+  description: Partner-provisioned electronic orders-and-results integration with
+    CMS-certified EHR systems (Epic Orders and Results Anywhere, OncoEMR/Flatiron,
+    iKnowMed, Meditech, Oracle, Aria, Elekta, Practice Fusion, CareEvolve, and
+    others). Implemented via standards-based lab order/result interfaces; not a
+    publicly documented developer API.
+- aid: caris-life-sciences:codeai
+  name: Caris CODEai Real-World Data
+  tags:
+  - Real-World Data
+  - Clinico-Genomic
+  - Biopharma
+  - Research
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.carislifesciences.com/research/artificial-intelligence/caris-codeai/
+  baseURL: https://www.carislifesciences.com/research/artificial-intelligence/caris-codeai/
+  properties:
+  - url: https://www.carislifesciences.com/research/artificial-intelligence/caris-codeai/
+    type: Documentation
+  - url: openapi/caris-life-sciences-openapi.yml
+    type: OpenAPI
+  description: Clinico-genomic real-world data platform combining molecular data,
+    treatment information, and clinical outcomes for biopharma and academic research
+    cohort analysis. Access is granted under contract via a Caris Molecular Science
+    Liaison; no public programmatic API is documented.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/caris-life-sciences
+- type: Website
+  url: https://www.carislifesciences.com
+- type: Documentation
+  url: https://www.carislifesciences.com/partners/ehr-integrations/
+- type: Plans
+  url: plans/caris-life-sciences-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/caris-life-sciences-rate-limits.yml
+- type: FinOps
+  url: finops/caris-life-sciences-finops.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

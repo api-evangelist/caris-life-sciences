@@ -1,0 +1,56 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Caris Life Sciences
+providerId: caris-life-sciences
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Precision Oncology
+- Molecular Profiling
+- Genomics
+- Healthcare
+- EHR Integration
+- Real-World Data
+- Rate Limiting
+- Quotas
+- Throttling
+description: >-
+  Caris Life Sciences does not publish a public developer API, and therefore
+  publishes no public rate limits, quotas, or throttling policy. The Caris+Portal
+  is an interactive web application, EHR integrations are provisioned per-partner
+  via standards-based orders/results interfaces, and CODEai is contract-licensed.
+  Any technical throughput or message-volume limits are governed by individual
+  integration or partnership agreements, not by a documented public rate-limit
+  page.
+notes: >-
+  Non-reconciled. No public rate-limit documentation exists. Confirm any
+  interface throughput, message-volume, or concurrency limits directly with
+  Caris during partner onboarding or contract negotiation.
+sources:
+- https://www.carislifesciences.com/partners/ehr-integrations/
+- https://www.carislifesciences.com/order/
+responseCodes: {}
+limits:
+- name: Public API Rate Limit
+  scope: account
+  metric: requests
+  limit: not applicable (no public API)
+  notes: Caris exposes no documented public developer API; no public rate limit is published.
+- name: EHR Integration Throughput
+  scope: partner
+  metric: messages
+  limit: governed by partner integration agreement
+  notes: Orders/results message throughput is defined per EHR integration, not publicly documented.
+- name: CODEai Platform Access
+  scope: contract
+  metric: queries
+  limit: governed by research/biopharma contract
+  notes: CODEai cohort query access and limits are set under the data-license agreement.
+policies:
+- name: Contractual Limits
+  description: Any operational limits are defined by individual integration or data-license agreements rather than a public policy.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

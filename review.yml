@@ -1,0 +1,70 @@
+aid: caris-life-sciences
+name: Caris Life Sciences
+review:
+  question: Does Caris Life Sciences expose a documented public developer API (REST or WebSocket)?
+  answer: false
+  date: '2026-06-20'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was created. Caris does not publish any documented
+    public streaming, Server-Sent Events, or WebSocket surface. EHR
+    orders/results integration is partner-provisioned messaging governed by
+    individual agreements, not a documented public event-driven API.
+findings:
+  summary: |
+    Caris Life Sciences does not publish a public, self-serve developer API or
+    machine-readable API reference. Clinician access is through the browser-based
+    Caris+Portal (https://portal.caris.ai) for ordering, case tracking, and
+    results review. Electronic ordering and results delivery into EHRs is
+    provisioned per-partner (Epic Orders and Results Anywhere, OncoEMR/Flatiron,
+    iKnowMed, Meditech, Oracle, Aria, Elekta, Practice Fusion, CareEvolve, and
+    others) via standards-based lab order/result interfaces. The CODEai
+    clinico-genomic real-world data platform is licensed to biopharma and
+    academic researchers under contract, accessed via a Caris Molecular Science
+    Liaison. None of these surfaces is documented as an open developer API, and
+    no public endpoints, authentication scheme, or rate limits are published.
+  transports:
+    - protocol: HTTPS Web Application
+      scheme: https
+      baseURL: https://portal.caris.ai
+      documented: true
+      note: Caris+Portal is an interactive browser web application, not a documented machine-consumable API.
+    - protocol: EHR Orders/Results Integration
+      scheme: https
+      documented: false
+      note: Partner-provisioned orders/results interfaces (e.g., Epic Orders and Results Anywhere). Integration is per-partner and not publicly specified.
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST developer API reference is published by Caris.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket surface is documented anywhere on Caris properties as of the review date.
+  endpointsConfirmedRest: []
+sources:
+  - url: https://www.carislifesciences.com/order/
+    type: Documentation
+    note: Describes ordering via Caris+Portal, manual requisition forms, and EHR integration. No API mentioned.
+  - url: https://www.carislifesciences.com/partners/ehr-integrations/
+    type: Documentation
+    note: Lists EHR integration partners and the orders/results model. No public API specification.
+  - url: https://portal.caris.ai/
+    type: Portal
+    note: Browser-based clinician portal login; no documented public HTTP API.
+  - url: https://www.carislifesciences.com/research/artificial-intelligence/caris-codeai/
+    type: Documentation
+    note: CODEai data platform for biopharma/research, contract access via Molecular Science Liaison. No public API.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No public developer API surface exists. The catalog documents the three
+    public-facing surfaces (Caris+Portal, EHR Integration, CODEai) with
+    reconciled:false plans/rate-limits/finops artifacts and a minimal,
+    non-fabricated OpenAPI describing only publicly reachable web pages. No
+    AsyncAPI was created because no streaming/SSE/WebSocket surface is documented.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

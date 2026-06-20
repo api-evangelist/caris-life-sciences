@@ -1,0 +1,64 @@
+{
+  "info": {
+    "name": "Caris Life Sciences (Public Surface)",
+    "description": "Caris Life Sciences does not publish a public, self-serve developer API. This collection models only the publicly reachable web surfaces (Caris+Portal landing and public informational pages). No third-party developer JSON/REST endpoints are documented by Caris, and none have been invented here.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Portal",
+      "item": [
+        {
+          "name": "Caris+Portal landing page",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://portal.caris.ai/",
+              "protocol": "https",
+              "host": ["portal", "caris", "ai"],
+              "path": [""]
+            },
+            "description": "Returns the Caris+Portal web application landing page. The portal is an interactive web application for authenticated clinicians; it is not a documented machine-consumable API."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Information",
+      "item": [
+        {
+          "name": "Test ordering information",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://www.carislifesciences.com/order/",
+              "protocol": "https",
+              "host": ["www", "carislifesciences", "com"],
+              "path": ["order", ""]
+            },
+            "description": "Public informational page describing how clinicians order Caris molecular profiling tests. No programmatic ordering endpoint is documented."
+          },
+          "response": []
+        },
+        {
+          "name": "EHR integration partner information",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://www.carislifesciences.com/partners/ehr-integrations/",
+              "protocol": "https",
+              "host": ["www", "carislifesciences", "com"],
+              "path": ["partners", "ehr-integrations", ""]
+            },
+            "description": "Public informational page listing supported EHR integration partners and the orders-and-results model. No public integration API specification is published."
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

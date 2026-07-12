@@ -79,6 +79,8 @@ apis:
     cohort analysis. Access is granted under contract via a Caris Molecular Science
     Liaison; no public programmatic API is documented.
 common:
+- type: DomainSecurity
+  url: security/caris-life-sciences-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/caris-life-sciences
 - type: Website

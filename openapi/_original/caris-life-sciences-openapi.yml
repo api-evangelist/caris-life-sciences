@@ -1,0 +1,94 @@
+openapi: 3.0.1
+info:
+  title: Caris Life Sciences (Public Surface)
+  description: >-
+    Caris Life Sciences does not publish a public, self-serve developer API or
+    machine-readable API reference. This OpenAPI document is a minimal, factual
+    placeholder describing only the publicly reachable web surfaces of Caris's
+    clinician and partner products. No third-party developer JSON/REST endpoints
+    are documented by Caris, and none have been invented here.
+
+    Clinician ordering, case tracking, and results review happen through the
+    browser-based Caris+Portal (https://portal.caris.ai). Electronic ordering and
+    results delivery into EHRs (Epic Orders and Results Anywhere, OncoEMR/Flatiron,
+    iKnowMed, and other CMS-certified systems) is provisioned per-partner through
+    standards-based lab order/result interfaces. The CODEai clinico-genomic data
+    platform is made available to biopharma and academic researchers under contract.
+    Access to all of these is onboarding- or contract-based, not open developer
+    sign-up.
+  contact:
+    name: Caris Life Sciences Customer Support
+    email: CustomerSupport@CarisLS.com
+    url: https://www.carislifesciences.com/contact/
+  version: '0.1'
+servers:
+  - url: https://portal.caris.ai
+    description: Caris+Portal clinician web application (browser-based; no documented public API).
+  - url: https://www.carislifesciences.com
+    description: Caris Life Sciences public website (marketing and partner information).
+tags:
+  - name: Portal
+    description: Browser-based Caris+Portal landing surface.
+  - name: Information
+    description: Public informational pages for ordering and integration partners.
+paths:
+  /:
+    get:
+      operationId: getPortalLanding
+      tags:
+        - Portal
+      summary: Caris+Portal landing page
+      description: >-
+        Returns the Caris+Portal web application landing page. The portal is an
+        interactive web application for authenticated clinicians and clinical
+        staff to submit requisitions, track case progress, and view results. It is
+        not a documented machine-consumable API; this operation models only the
+        public HTML landing surface.
+      responses:
+        '200':
+          description: Caris+Portal web application landing page (HTML).
+          content:
+            text/html:
+              schema:
+                type: string
+  /order/:
+    servers:
+      - url: https://www.carislifesciences.com
+    get:
+      operationId: getOrderingInformation
+      tags:
+        - Information
+      summary: Test ordering information
+      description: >-
+        Public informational page describing how clinicians order Caris molecular
+        profiling tests via the Caris+Portal, manual requisition forms, or EHR
+        integration. Informational HTML only; no programmatic ordering endpoint is
+        documented.
+      responses:
+        '200':
+          description: Ordering information page (HTML).
+          content:
+            text/html:
+              schema:
+                type: string
+  /partners/ehr-integrations/:
+    servers:
+      - url: https://www.carislifesciences.com
+    get:
+      operationId: getEhrIntegrationInformation
+      tags:
+        - Information
+      summary: EHR integration partner information
+      description: >-
+        Public informational page listing supported EHR integration partners and
+        the orders-and-results integration model. Partner integrations are
+        provisioned individually; no public integration API specification is
+        published.
+      responses:
+        '200':
+          description: EHR integration information page (HTML).
+          content:
+            text/html:
+              schema:
+                type: string
+components: {}

@@ -1,0 +1,16 @@
+{
+  "provider": "caris-life-sciences",
+  "sources": [
+    "caris-life-sciences-information-api-openapi.yml",
+    "caris-life-sciences-portal-api-openapi.yml"
+  ],
+  "outputs": [
+    "caris-life-sciences-information-api-openapi.yml",
+    "caris-life-sciences-portal-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

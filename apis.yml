@@ -31,7 +31,7 @@ tags:
 - Real-World Data
 created: '2026-06-20'
 modified: '2026-06-20'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: caris-life-sciences:caris-life-sciences-information-api
   name: Caris Life Sciences Information API

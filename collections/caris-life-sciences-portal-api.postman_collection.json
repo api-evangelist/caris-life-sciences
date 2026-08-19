@@ -1,0 +1,102 @@
+{
+  "item": [
+    {
+      "id": "42c0fe32-c427-4dc8-ae31-ae0b12708453",
+      "name": "Portal",
+      "description": {
+        "content": "Browser-based Caris+Portal landing surface.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "0213627c-016a-429a-a05a-cee598601929",
+          "name": "Caris+Portal landing page",
+          "request": {
+            "name": "Caris+Portal landing page",
+            "description": {
+              "content": "Returns the Caris+Portal web application landing page. The portal is an interactive web application for authenticated clinicians and clinical staff to submit requisitions, track case progress, and view results. It is not a documented machine-consumable API; this operation models only the public HTML landing surface.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/html"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f07922bf-a168-425f-9a98-1a21027ddc13",
+              "name": "Caris+Portal web application landing page (HTML).",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/html"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/html"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://portal.caris.ai",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "216fe126-5c78-4fac-8e7c-568e3970ee8e",
+    "name": "Caris Life Sciences (Public Surface) Information Portal API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Caris Life Sciences does not publish a public, self-serve developer API or machine-readable API reference. This OpenAPI document is a minimal, factual placeholder describing only the publicly reachable web surfaces of Caris's clinician and partner products. No third-party developer JSON/REST endpoints are documented by Caris, and none have been invented here.\nClinician ordering, case tracking, and results review happen through the browser-based Caris+Portal (https://portal.caris.ai). Electronic ordering and results delivery into EHRs (Epic Orders and Results Anywhere, OncoEMR/Flatiron, iKnowMed, and other CMS-certified systems) is provisioned per-partner through standards-based lab order/result interfaces. The CODEai clinico-genomic data platform is made available to biopharma and academic researchers under contract. Access to all of these is onboarding- or contract-based, not open developer sign-up.\n\nContact Support:\n Name: Caris Life Sciences Customer Support\n Email: CustomerSupport@CarisLS.com",
+      "type": "text/plain"
+    }
+  }
+}

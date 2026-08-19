@@ -1,0 +1,188 @@
+{
+  "item": [
+    {
+      "id": "0c83a370-fd84-43db-b339-eb3ad0a4c3a6",
+      "name": "Information",
+      "description": {
+        "content": "Public informational pages for ordering and integration partners.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "8ba14a7d-d5e8-4def-b48e-3fb619b16e98",
+          "name": "Test ordering information",
+          "request": {
+            "name": "Test ordering information",
+            "description": {
+              "content": "Public informational page describing how clinicians order Caris molecular profiling tests via the Caris+Portal, manual requisition forms, or EHR integration. Informational HTML only; no programmatic ordering endpoint is documented.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "order",
+                ""
+              ],
+              "host": [
+                "{{order--Url}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/html"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d4540d66-6eb7-42ea-83db-4e5242546543",
+              "name": "Ordering information page (HTML).",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "order",
+                    ""
+                  ],
+                  "host": [
+                    "{{order--Url}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/html"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/html"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "faef5efb-73bf-4386-99a9-9b525f95134e",
+          "name": "EHR integration partner information",
+          "request": {
+            "name": "EHR integration partner information",
+            "description": {
+              "content": "Public informational page listing supported EHR integration partners and the orders-and-results integration model. Partner integrations are provisioned individually; no public integration API specification is published.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "partners",
+                "ehr-integrations",
+                ""
+              ],
+              "host": [
+                "{{partners-ehr-integrations--Url}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/html"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e38ff2b3-0d55-45f7-b27f-551484370aa0",
+              "name": "EHR integration information page (HTML).",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "partners",
+                    "ehr-integrations",
+                    ""
+                  ],
+                  "host": [
+                    "{{partners-ehr-integrations--Url}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/html"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/html"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://portal.caris.ai",
+      "key": "baseUrl"
+    },
+    {
+      "type": "string",
+      "value": "https://www.carislifesciences.com",
+      "key": "order--Url"
+    },
+    {
+      "type": "string",
+      "value": "https://www.carislifesciences.com",
+      "key": "partners-ehr-integrations--Url"
+    }
+  ],
+  "info": {
+    "_postman_id": "51aae0a3-603a-4f48-ac61-19e62dd97154",
+    "name": "Caris Life Sciences (Public Surface) Information API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Caris Life Sciences does not publish a public, self-serve developer API or machine-readable API reference. This OpenAPI document is a minimal, factual placeholder describing only the publicly reachable web surfaces of Caris's clinician and partner products. No third-party developer JSON/REST endpoints are documented by Caris, and none have been invented here.\nClinician ordering, case tracking, and results review happen through the browser-based Caris+Portal (https://portal.caris.ai). Electronic ordering and results delivery into EHRs (Epic Orders and Results Anywhere, OncoEMR/Flatiron, iKnowMed, and other CMS-certified systems) is provisioned per-partner through standards-based lab order/result interfaces. The CODEai clinico-genomic data platform is made available to biopharma and academic researchers under contract. Access to all of these is onboarding- or contract-based, not open developer sign-up.\n\nContact Support:\n Name: Caris Life Sciences Customer Support\n Email: CustomerSupport@CarisLS.com",
+      "type": "text/plain"
+    }
+  }
+}

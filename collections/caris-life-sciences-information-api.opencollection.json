@@ -1,0 +1,40 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Caris Life Sciences (Public Surface) Information API",
+    "version": "0.1"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Information",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Test ordering information",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://portal.caris.ai/order/"
+          },
+          "docs": "Public informational page describing how clinicians order Caris molecular profiling tests via the Caris+Portal, manual requisition forms, or EHR integration. Informational HTML only; no programmatic ordering endpoint is documented."
+        },
+        {
+          "info": {
+            "name": "EHR integration partner information",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://portal.caris.ai/partners/ehr-integrations/"
+          },
+          "docs": "Public informational page listing supported EHR integration partners and the orders-and-results integration model. Partner integrations are provisioned individually; no public integration API specification is published."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

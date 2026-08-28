@@ -9,6 +9,18 @@ description: Caris Life Sciences is a molecular science and precision oncology c
   Anywhere, OncoEMR/Flatiron, iKnowMed, and other CMS-certified systems). Caris does
   not publish a public, self-serve developer API; integration is partner- and
   contract-based.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown

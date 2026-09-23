@@ -1,0 +1,26 @@
+# Front Door AI Index — caris-life-sciences — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: caris-life-sciences
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.carislifesciences.com
+  final_host: www.carislifesciences.com
+  ownership: own
+  owner: caris-life-sciences
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 4
+  host_score: 4
+  density: 2.99
+  words: 1337
+  tiers:
+    agentic: 0
+    core: 4
+    model: 0
+  ambiguous: 1
+  top_terms:
+    AI: 4
+    intelligence: 1

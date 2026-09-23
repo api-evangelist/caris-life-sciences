@@ -1,9 +1,7 @@
-openapi: 3.0.1
+openapi: 3.2.0
 info:
   title: Caris Life Sciences (Public Surface) Information API
-  description: 'Caris Life Sciences does not publish a public, self-serve developer API or machine-readable API reference. This OpenAPI document is a minimal, factual placeholder describing only the publicly reachable web surfaces of Caris''s clinician and partner products. No third-party developer JSON/REST endpoints are documented by Caris, and none have been invented here.
-
-    Clinician ordering, case tracking, and results review happen through the browser-based Caris+Portal (https://portal.caris.ai). Electronic ordering and results delivery into EHRs (Epic Orders and Results Anywhere, OncoEMR/Flatiron, iKnowMed, and other CMS-certified systems) is provisioned per-partner through standards-based lab order/result interfaces. The CODEai clinico-genomic data platform is made available to biopharma and academic researchers under contract. Access to all of these is onboarding- or contract-based, not open developer sign-up.'
+  description: Caris Life Sciences does not publish a public, self-serve developer API or machine-readable API reference.
   contact:
     name: Caris Life Sciences Customer Support
     email: CustomerSupport@CarisLS.com

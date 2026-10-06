@@ -42,7 +42,7 @@ tags:
 - EHR Integration
 - Real-World Data
 created: '2026-06-20'
-modified: '2026-06-20'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
 - aid: caris-life-sciences:caris-life-sciences-information-api
@@ -78,6 +78,8 @@ apis:
   - type: Documentation
     url: https://www.carislifesciences.com/research/artificial-intelligence/caris-codeai/
 common:
+- url: https://www.carislifesciences.com/news-and-events/news/
+  type: Blog
 - type: AgenticAccess
   url: agentic-access/caris-life-sciences-agentic-access.yml
 - type: DomainSecurity

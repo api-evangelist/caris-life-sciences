@@ -1,4 +1,4 @@
-# Caris Life Sciences (caris-life-sciences)
+# Caris Life Sciences
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,100 +66,116 @@
 
 Caris Life Sciences is a molecular science and precision oncology company that delivers comprehensive tumor profiling (Caris Molecular Intelligence / MI Profiling) and a clinico-genomic real-world data platform (CODEai). Clinician access is through the Caris+Portal and partner-provisioned EHR integrations (Epic Orders and Results Anywhere, OncoEMR/Flatiron, iKnowMed, and other CMS-certified systems). Caris does not publish a public, self-serve developer API; integration is partner- and contract-based.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/caris-life-sciences/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/caris-life-sciences/refs/heads/main/apis.yml)
+**Areas:** Precision Oncology · Molecular Profiling · Genomics · Healthcare · EHR Integration · Real-World Data
 
-## Tags
+## Caris Life Sciences on APIs.io
 
-- Precision Oncology
-- Molecular Profiling
-- Genomics
-- Healthcare
-- EHR Integration
-- Real-World Data
+Everything profiled for Caris Life Sciences is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/caris-life-sciences/](https://apis.io/providers/caris-life-sciences/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (2)
 
-- **Created:** 2026-06-20
-- **Modified:** 2026-06-20
+- [Caris Life Sciences Information API](https://apis.io/apis/caris-life-sciences/caris-life-sciences-information-api/) — Public informational pages for ordering and integration partners.
+- [Caris Life Sciences Portal API](https://apis.io/apis/caris-life-sciences/caris-life-sciences-portal-api/) — Browser-based Caris+Portal landing surface.
 
-## APIs
+### Published properties
 
-### Caris+Portal
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Web-based clinician portal for electronically submitting test orders (requisitions), tracking case progress, and viewing molecular profiling results. Accessed through the browser at portal.caris.ai; no documented public HTTP API is exposed to third-party developers.
+#### Agentic access (1)
 
-- **Human URL:** [https://portal.caris.ai/](https://portal.caris.ai/)
-- **Base URL:** `https://portal.caris.ai`
+Which operations an agent can call, which act, and which need a human in the loop.
 
-#### Tags
+- [Caris Life Sciences Agentic Access](https://apis.io/agentic-access/caris-life-sciences/caris-life-sciences-agentic-access/)
 
-- Portal
-- Ordering
-- Results
+#### Collections (3)
 
-#### Properties
+Postman and Open Collection request collections.
 
-- [Documentation](https://www.carislifesciences.com/order/)
-- [OpenAPI](openapi/caris-life-sciences-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/caris-life-sciences.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/caris-life-sciences.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Caris Life Sciences (Public Surface)](https://apis.io/collections/caris-life-sciences/open-caris-life-sciences/)
+- [Caris Life Sciences (Public Surface) Information API](https://apis.io/collections/caris-life-sciences/open-caris-life-sciences-information-api/)
+- [Caris Life Sciences (Public Surface) Information Portal API](https://apis.io/collections/caris-life-sciences/open-caris-life-sciences-portal-api/)
 
-### Caris EHR Integration
+#### Security (1)
 
-Partner-provisioned electronic orders-and-results integration with CMS-certified EHR systems (Epic Orders and Results Anywhere, OncoEMR/Flatiron, iKnowMed, Meditech, Oracle, Aria, Elekta, Practice Fusion, CareEvolve, and others). Implemented via standards-based lab order/result interfaces; not a publicly documented developer API.
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Human URL:** [https://www.carislifesciences.com/partners/ehr-integrations/](https://www.carislifesciences.com/partners/ehr-integrations/)
-- **Base URL:** `https://www.carislifesciences.com/partners/ehr-integrations/`
+- [Caris Life Sciences Domain Security](https://apis.io/security/caris-life-sciences/caris-life-sciences-domain-security/)
 
-#### Tags
+#### Plans and pricing (1)
 
-- EHR
-- HL7
-- Orders and Results
-- Epic
+Published plans, tiers and prices.
 
-#### Properties
+- [Caris Life Sciences Plans Pricing](https://apis.io/plans/caris-life-sciences/caris-life-sciences-plans-pricing/)
 
-- [Documentation](https://www.carislifesciences.com/partners/ehr-integrations/)
-- [OpenAPI](openapi/caris-life-sciences-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/caris-life-sciences.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/caris-life-sciences.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### Rate limits (1)
 
-### Caris CODEai Real-World Data
+Published request limits.
 
-Clinico-genomic real-world data platform combining molecular data, treatment information, and clinical outcomes for biopharma and academic research cohort analysis. Access is granted under contract via a Caris Molecular Science Liaison; no public programmatic API is documented.
+- [Caris Life Sciences Rate Limits](https://apis.io/rate-limits/caris-life-sciences/caris-life-sciences-rate-limits/)
 
-- **Human URL:** [https://www.carislifesciences.com/research/artificial-intelligence/caris-codeai/](https://www.carislifesciences.com/research/artificial-intelligence/caris-codeai/)
-- **Base URL:** `https://www.carislifesciences.com/research/artificial-intelligence/caris-codeai/`
+#### FinOps (1)
 
-#### Tags
+What the API costs to run, by operation.
 
-- Real-World Data
-- Clinico-Genomic
-- Biopharma
-- Research
+- [Caris Life Sciences Finops](https://apis.io/finops/caris-life-sciences/caris-life-sciences-finops/)
 
-#### Properties
+## Where to find this API
 
-- [Documentation](https://www.carislifesciences.com/research/artificial-intelligence/caris-codeai/)
-- [OpenAPI](openapi/caris-life-sciences-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/caris-life-sciences.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/caris-life-sciences.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/caris-life-sciences)
 - [Website](https://www.carislifesciences.com)
 - [Documentation](https://www.carislifesciences.com/partners/ehr-integrations/)
-- [Plans](plans/caris-life-sciences-plans-pricing.yml)
-- [Rate Limits](rate-limits/caris-life-sciences-rate-limits.yml)
-- [Fin Ops](finops/caris-life-sciences-finops.yml)
+- [Blog](https://www.carislifesciences.com/news-and-events/news/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 20.8** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Note on API Availability
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 43.5 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 5.3 |
 
-Caris Life Sciences does not publish a public, self-serve developer API or API reference. The surfaces catalogued here — the Caris+Portal, partner EHR integrations, and the CODEai data platform — are provisioned through partnership, onboarding, or contract rather than open developer sign-up. The OpenAPI, plans, rate-limit, and FinOps artifacts in this repository are marked `reconciled: false` where details are not publicly documented, and describe only what Caris states publicly. No endpoints have been fabricated.
+**Agent readiness 17.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/caris-life-sciences/](https://apis.io/providers/caris-life-sciences/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Caris Life Sciences: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/caris-life-sciences/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
